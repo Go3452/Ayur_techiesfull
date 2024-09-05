@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(images/bg-plant.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .child{
+            border: 1px solid green;
+            float: left;    
+            width: 35%;
+            margin-left: 4rem;
+        }
+       
+  .child .plant{
+  padding: 3rem 2rem;
+  background-color: #FFF;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+  outline: .1rem solid #83da90;
+  outline-offset: -.5rem;
+  cursor: pointer;
+  
+  padding-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+ .plant img:hover{
+  transform: scale(.99);
+}
+
+ .plant:hover{
+  outline: .1rem solid #26923e;
+  outline-offset: 0;
+
+}
+ .plant h3{
+  font-size: 1.5rem;
+  color: #000;
+  padding: .5rem 0;
+}
+ .plant .botanical,.habitat,.use{
+  font-size: 1rem;
+  color: #000;
+}
+ .plant span{
+  font-weight: 500;
+}
+.plant .category{
+  font-size: .9rem;
+  color: #000;
+}
+.plant .button {
+  border: none;
+  color: white;
+  background-color: #3e7754;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+ .plant .productRating i{
+  position: absolute;
+  right: 40px;
+  display: flex;
+  margin-top: -2.1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+
+        </style>
+</head>
+<body>
+    <section>
+        <section class="child">
+            <div class="plant" data-name="p2">
+                <img src="image/lav.jpg"alt="">
+                <h3>Lavender</h3>
+                <div class="productRating">
+                  <i class="ri-heart-3-line" style="color: red;"></i>
+                    </div>
+                <div class="botanical"><span>Botanical Name:</span> Lavandula angustifolia</div>
+                      
+        <div class="habitat"><span>Habitat:</span> Mediterranean regions and temperate areas</div>
+        <div class="use"><span>Medicinal Use:</span> Relieves stress and supports sleep quality</div>
+                <div class="category"><span>Category:</span> Leaves</div>
+                <a href="laven.html"><button class="button" type="button">3D Model!!!</button></a>
+              </div>
+        </section>
+        <section class="child">
+            <h3 class="eng">Lavender</h3>
+            <p style="font-weight: 600;">Lavender has many medicinal uses, including: 
+                Anxiety, stress, and depression: Lavender is believed to help with anxiety, stress, and depression
+                Pain: Lavender can help relieve pain from headaches, sprains, toothaches, and sores
+                Digestive issues: Lavender tea may help with digestive issues like vomiting, nausea, intestinal gas, upset stomach, and abdominal swelling. 
+                Memory: Lavender may help improve memory, concentration, and reduce anxiety.</p>
+            <h3 class="hin">लैवेंडर</h3>
+            <p>लैवेंडर के कई औषधीय उपयोग हैं, जिनमें शामिल हैं: 
+                चिंता, तनाव और अवसाद: माना जाता है कि लैवेंडर चिंता, तनाव और अवसाद से निपटने में मदद करता है
+                दर्द: लैवेंडर सिरदर्द, मोच, दांत दर्द और घावों के दर्द से राहत दिलाने में मदद कर सकता है
+                पाचन संबंधी समस्याएं: लैवेंडर चाय उल्टी, मतली, आंतों की गैस, पेट की खराबी और पेट की सूजन जैसी पाचन संबंधी समस्याओं में मदद कर सकती है। 
+                याददाश्त: लैवेंडर याददाश्त, एकाग्रता में सुधार और चिंता को कम करने में मदद कर सकता है।</p>
+            <h3 class="desc">Audio Description -</h3>
+            <audio controls class='audioPlayer'>
+                <source src='music/laven.mp4' type='audio/mpeg'>
+            </audio>
+        </section>
+    </section>
+</body>
+</html>

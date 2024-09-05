@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(images/bg-plant.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .child{
+            border: 1px solid green;
+            float: left;    
+            width: 35%;
+            margin-left: 4rem;
+        }
+       
+  .child .plant{
+  padding: 3rem 2rem;
+  background-color: #FFF;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+  outline: .1rem solid #83da90;
+  outline-offset: -.5rem;
+  cursor: pointer;
+  
+  padding-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+ .plant img:hover{
+  transform: scale(.99);
+}
+
+ .plant:hover{
+  outline: .1rem solid #26923e;
+  outline-offset: 0;
+
+}
+ .plant h3{
+  font-size: 1.5rem;
+  color: #000;
+  padding: .5rem 0;
+}
+ .plant .botanical,.habitat,.use{
+  font-size: 1rem;
+  color: #000;
+}
+ .plant span{
+  font-weight: 500;
+}
+.plant .category{
+  font-size: .9rem;
+  color: #000;
+}
+.plant .button {
+  border: none;
+  color: white;
+  background-color: #3e7754;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+ .plant .productRating i{
+  position: absolute;
+  right: 40px;
+  display: flex;
+  margin-top: -2.1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+
+        </style>
+</head>
+<body>
+    <section>
+        <section class="child">
+            <div class="plant" data-name="p5">
+                <img src="image/ash.jpg"alt="">
+                <h3>Ashwagandha</h3>
+                <div class="productRating">
+                  <i class="ri-heart-3-line" style="color: red;"></i>
+                    </div>
+                <div class="botanical"><span>Botanical Name:</span> Withania somnifera</div>
+                    
+        <div class="habitat"><span>Habitat:</span> Dry regions</div>
+        <div class="use"><span>Medicinal Use:</span>Reduces stress</div>
+                <div class="category"><span>Category:</span> Medicinal use, Roots</div>
+               <a href="ashvagandha.html" ><button class="button" type="button">3D Model!!!</button></a>
+              </div>
+        </section>
+        <section class="child">
+            <h3 class="eng">Ashwagandha</h3>
+            <p style="font-weight: 600;">Ashwagandha contains chemicals that might help calm the brain, reduce swelling, lower blood pressure, and alter the immune system.
+                it is used for many conditions related to stress.
+                Helps Fight Depression. Ashwagandha might prove useful in reducing depression levels.
+                Increases Muscle Mass
+                Ashwagandha has been found to be useful in improving the muscle mass, body composition & overall strength.
+                Lowers Cholesterol
+                Ashwagandha health benefits also include improving heart health by lowering cholesterol.</p>
+            <h3 class="hin">अश्वगंधा</h3>
+            <p>अश्वगंधा में ऐसे रसायन होते हैं जो मस्तिष्क को शांत करने, सूजन को कम करने, रक्तचाप को कम करने और प्रतिरक्षा प्रणाली को बदलने में मदद कर सकते हैं।
+                इसका उपयोग तनाव से संबंधित कई स्थितियों के लिए किया जाता है।
+                अवसाद से लड़ने में मदद करता है। अश्वगंधा अवसाद के स्तर को कम करने में उपयोगी साबित हो सकता है।
+                मांसपेशियों का द्रव्यमान बढ़ाता है
+                अश्वगंधा को मांसपेशियों, शरीर की संरचना और समग्र शक्ति में सुधार के लिए उपयोगी पाया गया है।
+                कोलेस्ट्रॉल कम करता है
+                अश्वगंधा के स्वास्थ्य लाभों में कोलेस्ट्रॉल को कम करके हृदय स्वास्थ्य में सुधार करना भी शामिल है।</p>
+            <h3 class="desc">Audio Description -</h3>
+            <audio controls class='audioPlayer'>
+                <source src='music/ashwa.mp4' type='audio/mpeg'>
+            </audio>
+        </section>
+    </section>
+</body>
+</html>

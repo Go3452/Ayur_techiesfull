@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+
+    <!--=============== REMIX ICONS ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>plants garden</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"
+          ><img src="images/LOGO1.jpg" />VedicShala</a
+        >
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="explore.html" class="nav__link active-link">Explore</a>
+            </li>
+            <li class="nav__item">
+              <a href="faq.html" class="nav__link">FAQs</a>
+            </li>
+            <li class="nav__item">
+              <i class="ri-search-line" id="search-btn"></i>
+              <a href="explore.html" class="nav__link">Search</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+          <div class="nav-close" id="navclose">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <!--toggle-->
+
+        <div class="nav-heart" id="heart">
+          <button id="bt" class="bt1">
+            <a href="addfav.html"
+              ><i class="ri-heart-3-fill" style="color: red"></i
+            ></a>
+          </button>
+        </div>
+        <div class="nav-user" id="user">
+          <i class="ri-user-line"></i>
+        </div>
+        <div class="nav-toggle" id="idtoggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--explore-->
+
+      <!-- ========== Start explore Section ========== -->
+      <!--search-->
+      <div class="searchbar" id="search">
+        <!-- Search Bar start -->
+        <div class="search-bar">
+          <!-- Search box input start -->
+          <div class="search-box">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search..."
+              onkeyup="search()"
+              autocomplete="off"
+            />
+            <i class="ri-search-line"></i>
+          </div>
+          <!-- Search box input ends -->
+        </div>
+      </div>
+      <!-- Search Bar ends -->
+
+      <section class="explore container" id="explore">
+        <div class="">
+          <h2 class="section-common--heading">Explore Our Herbal Garden</h2>
+        </div>
+        <div class="plant-contain">
+          <div class="plant" data-name="p5">
+            <img src="images/ashwagandha.jpg" alt="" />
+            <h3>Ashwagandha</h3>
+            <div class="productRating">
+              <button onclick="Toggle1()" id="btn1" class="btn">
+                <i class="ri-heart-3-line"></i>
+              </button>
+            </div>
+            <div class="botanical">
+              <span>Botanical Name:</span> Withania somnifera
+            </div>
+
+            <div class="habitat"><span>Habitat:</span> Dry regions</div>
+            <div class="use"><span>Medicinal Use:</span>Reduces stress</div>
+            <div class="category">
+              <span>Category:</span> Medicinal use, Roots
+            </div>
+            <a href="ashw.html"
+              ><button class="button" type="button">Know More!!!</button></a
+            >
+          </div>
+
+          <div class="plant" data-name="p3">
+            <img src="images/tulsi.png" alt="" />
+            <h3>Tulsi</h3>
+
+            <div class="productRating" style="top: 13.3rem; left: 15rem">
+              <button onclick="Toggle2()" id="btn2" class="btn">
+                <i class="ri-heart-3-line"></i>
+              </button>
+            </div>
+            <div class="botanical">
+              <span>Botanical Name:</span> Ocimum sanctum
+            </div>
+
+            <div class="habitat">
+              <span>Habitat:</span> Tropical and subtropical regions
+            </div>
+            <div class="use">
+              <span>Medicinal Use:</span> Relieves stress and supports sleep
+              quality
+            </div>
+            <div class="category"><span>Category:</span> Leaves</div>
+            <a href="tul.html"
+              ><button class="button" type="button">Know More!!!</button></a
+            >
+          </div>
+
+          <div class="plant" data-name="p1">
+            <img src="images/aloevera.jpg" alt="" />
+            <h3>Aloe Vera</h3>
+            <div class="productRating">
+              <button onclick="Toggle3()" id="btn3" class="btn">
+                <i class="ri-heart-3-line"></i>
+              </button>
+            </div>
+            <div class="botanical">
+              <span>Botanical Name:</span> Aloe barbadensis miller
+            </div>
+
+            <div class="habitat"><span>Habitat:</span> Arid Regions</div>
+            <div class="use">
+              <span>Medicinal Use: </span>Soothes skin burns
+            </div>
+            <div class="category">
+              <span>Category:</span> Medicinal use, Leaves
+            </div>
+            <a href="aloe.html"
+              ><button class="button" type="button">Know More!!!</button></a
+            >
+          </div>
+
+          <div class="plant" data-name="p4">
+            <img src="images/chamomile.jpeg" alt="" />
+            <h3>German Chamomile</h3>
+            <div class="productRating">
+              <button onclick="Toggle4()" id="btn4" class="btn">
+                <i class="ri-heart-3-line"></i>
+              </button>
+            </div>
+            <div class="botanical">
+              <span>Botanical Name:</span> Matricaria chamomilla
+            </div>
+
+            <div class="habitat"><span>Habitat:</span> Temperate regions</div>
+            <div class="use">
+              <span>Medicinal Use:</span> Relieves digestive issues
+            </div>
+            <div class="category">
+              <span>Category:</span> Medicinal use, Flowers
+            </div>
+            <button class="button" type="button">Know More!!!</button>
+          </div>
+
+          <div class="plant" data-name="p2">
+            <img src="images/lavender.png" alt="" />
+            <h3>Lavender</h3>
+            <div class="productRating">
+              <button onclick="Toggle5()" id="btn5" class="btn">
+                <i class="ri-heart-3-line"></i>
+              </button>
+            </div>
+            <div class="botanical">
+              <span>Botanical Name:</span> Lavandula angustifolia
+            </div>
+
+            <div class="habitat">
+              <span>Habitat:</span> Mediterranean regions and temperate areas
+            </div>
+            <div class="use">
+              <span>Medicinal Use:</span> Relieves stress and supports sleep
+              quality
+            </div>
+            <div class="category"><span>Category:</span> Leaves</div>
+            <a href="lave.html"><button class="button" type="button">Know More!!!</button></a>
+          </div>
+
+          <div class="plant" data-name="p6">
+            <img src="images/turmeric.jpg" alt="" />
+            <h3>Turmeric</h3>
+            <div class="productRating">
+              <button onclick="Toggle6()" id="btn6" class="btn">
+                <i class="ri-heart-3-line"></i>
+              </button>
+            </div>
+            <div class="botanical">
+              <span>Botanical Name:</span> Curcuma longa
+            </div>
+
+            <div class="habitat"><span>Habitat:</span> Tropical regions</div>
+            <div class="use">
+              <span>Medicinal Use:</span> Reduces inflammation and supports
+              joint health
+            </div>
+            <div class="category"><span>Category:</span>Medicinal use</div>
+            <button class="button" type="button">Know More!!!</button>
+          </div>
+          <div class="plant" data-name="p7">
+            <img src="images/Rosemary .jpg" alt="" />
+            <h3>Rosemary</h3>
+            <div class="productRating" style="top: 15.1rem; left: 15rem">
+              <button onclick="Toggle5()" id="btn5" class="btn">
+                <i class="ri-heart-3-line"></i>
+              </button>
+            </div>
+            <div class="botanical">
+              <span>Botanical Name:</span> Rosmarinus officinalis
+            </div>
+
+            <div class="habitat">
+              <span>Habitat:</span> Native to the Mediterranean region
+            </div>
+            <div class="use">
+              <span>Medicinal Use:</span> Improves memory and concentration
+            </div>
+            <div class="category"><span>Category:</span> Flower</div>
+            <button class="button" type="button">Know More!!!</button>
+          </div>
+
+          <div class="plant" data-name="p8">
+            <img src="images/Barberry.jpeg" alt="" />
+            <h3>Barberry</h3>
+            <div class="productRating" style="top: 14rem; left: 15rem">
+              <button onclick="Toggle5()" id="btn5" class="btn">
+                <i class="ri-heart-3-line"></i>
+              </button>
+            </div>
+            <div class="botanical">
+              <span>Botanical Name:</span> Berberis vulgaris
+            </div>
+
+            <div class="habitat">
+              <span>Habitat:</span> Temperate regions of Europe, Asia, and North
+              America
+            </div>
+            <div class="use">
+              <span>Medicinal Use:</span> Supports digestive health and reduces
+              inflammation
+            </div>
+            <div class="category"><span>Category:</span> Berries</div>
+            <button class="button" type="button">Know More!!!</button>
+          </div>
+
+          <div class="plant" data-name="p9">
+            <img src="images/Ginkgo.jpg" alt="" />
+            <h3>Ginkgo</h3>
+            <div class="productRating" style="top: 15rem; left: 15rem">
+              <button onclick="Toggle5()" id="btn5" class="btn">
+                <i class="ri-heart-3-line"></i>
+              </button>
+            </div>
+            <div class="botanical">
+              <span>Botanical Name:</span> Ginkgo biloba
+            </div>
+
+            <div class="habitat">
+              <span>Habitat:</span> Temperate regions of Asia and North America
+            </div>
+            <div class="use">
+              <span>Medicinal Use:</span> Enhances cognitive function and
+              supports circulatory health
+            </div>
+            <div class="category"><span>Category:</span> Leaves</div>
+            <button class="button" type="button">Know More!!!</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== End explore Section ========== -->
+
+      <!--==================== FOOTER contact ====================-->
+      <footer class="footer" id="contact">
+        <div class="container footer_container">
+          <div class="footer_item">
+            <a href="#logo" class="nav__logo"
+              ><img src="images/LOGO1.jpg" />
+              <h3>VedicShala</h3></a
+            >
+
+            <p class="footer_p">Welcome to the Garden of Oushadhi.</p>
+            <div class="icons">
+              <a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-twitter-line"></i></a>
+              <a href="#"><i class="ri-facebook-circle-line"></i></a>
+            </div>
+          </div>
+          <div class="footer_item">
+            <div class="footer_item_title">Information</div>
+            <ul class="footer_list">
+              <li class="footer_list_item"><a href="#">About Us</a></li>
+              <li class="footer_list_item"><a href="#">Explore</a></li>
+              <li class="footer_list_item"><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="footer_item">
+            <div class="footer_item_title">Company</div>
+            <ul class="footer_list">
+              <li class="footer_list_item"><a href="#">Communtiy</a></li>
+              <li class="footer_list_item"><a href="#">Careers</a></li>
+              <li class="footer_list_item"><a href="#">Our Story</a></li>
+            </ul>
+          </div>
+          <div class="footer_item">
+            <div class="footer_item_title">Contact</div>
+            <ul class="footer_list">
+              <li class="footer_list_item"><a href="#">Getting Starded</a></li>
+              <li class="footer_list_item"><a href="#">Benefits</a></li>
+              <li class="footer_list_item"><a href="#">Resources</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container footer_copy">
+          <p>@2023 VedicShala | All Rights Reserved</p>
+        </div>
+      </footer>
+    </main>
+    <!--=============== MAIN JS ===============-->
+    <script>
+      /*fav button*/
+      var btnval = document.getElementById("btn1");
+      function Toggle1() {
+        if (btnval.style.color == "red") {
+          btnval.style.color = "black";
+        } else {
+          btnval.style.color = "red";
+        }
+      }
+      var btnval2 = document.getElementById("btn2");
+      function Toggle2() {
+        if (btnval2.style.color == "red") {
+          btnval2.style.color = "black";
+        } else {
+          btnval2.style.color = "red";
+        }
+      }
+      var btnval3 = document.getElementById("btn3");
+      function Toggle3() {
+        if (btnval3.style.color == "red") {
+          btnval3.style.color = "black";
+        } else {
+          btnval3.style.color = "red";
+        }
+      }
+      var btnval4 = document.getElementById("btn4");
+      function Toggle4() {
+        if (btnval4.style.color == "red") {
+          btnval4.style.color = "black";
+        } else {
+          btnval4.style.color = "red";
+        }
+      }
+      var btnval5 = document.getElementById("btn5");
+      function Toggle5() {
+        if (btnval5.style.color == "red") {
+          btnval5.style.color = "black";
+        } else {
+          btnval5.style.color = "red";
+        }
+      }
+      var btnval6 = document.getElementById("btn6");
+      function Toggle6() {
+        if (btnval6.style.color == "red") {
+          btnval6.style.color = "lightgray";
+        } else {
+          btnval6.style.color = "red";
+        }
+      }
+      /*search
+       */
+
+      function search() {
+        let filter = document
+          .getElementById("search-input")
+          .value.toUpperCase();
+        let item = document.querySelectorAll(".plant");
+        let l = document.getElementsByTagName("h3");
+        for (var i = 0; i <= l.length; i++) {
+          let a = item[i].getElementsByTagName("h3")[0];
+          let value = a.innerHTML || a.innerText || a.textContent;
+          if (
+            value.toUpperCase().indexOf(filter) > -1 &&
+            value.startsWith("A")
+          ) {
+            item[i].style.display = "";
+          } else {
+            item[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

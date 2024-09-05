@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'SF Distant Galaxy';
+  src: local('SF Distant Galaxy'), url(fonts/SF\ Distant\ Galaxy.ttf), format('ttf');
+}
+
+body {
+  background-color: rgb(245, 248, 249);
+  margin: 0;
+  font-family: 'SF Distant Galaxy';
+  background-image: url('bggg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#heading {
+  position: fixed;
+  width: 100%;
+  padding: 22px;
+}
+
+h1 {
+  color: rgb(28, 176, 17);
+  font-size: 4em;
+  margin: 0px;
+  font-weight: 100;
+}

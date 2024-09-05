@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(images/bg-plant.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .child{
+            border: 1px solid green;
+            float: left;    
+            width: 35%;
+            margin-left: 4rem;
+        }
+       
+  .child .plant{
+  padding: 3rem 2rem;
+  background-color: #FFF;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+  outline: .1rem solid #83da90;
+  outline-offset: -.5rem;
+  cursor: pointer;
+  
+  padding-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+ .plant img:hover{
+  transform: scale(.99);
+}
+
+ .plant:hover{
+  outline: .1rem solid #26923e;
+  outline-offset: 0;
+
+}
+ .plant h3{
+  font-size: 1.5rem;
+  color: #000;
+  padding: .5rem 0;
+}
+ .plant .botanical,.habitat,.use{
+  font-size: 1rem;
+  color: #000;
+}
+ .plant span{
+  font-weight: 500;
+}
+.plant .category{
+  font-size: .9rem;
+  color: #000;
+}
+.plant .button {
+  border: none;
+  color: white;
+  background-color: #3e7754;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+ .plant .productRating i{
+  position: absolute;
+  right: 40px;
+  display: flex;
+  margin-top: -2.1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+
+        </style>
+</head>
+<body>
+    <section>
+        <section class="child">
+            <div class="plant" data-name="p3">
+                <img src="image/tul.jpg"alt="">
+                <h3>Tulsi</h3>
+                <div class="productRating">
+                  <i class="ri-heart-3-line" style="color: red;"></i>
+                    </div>
+                <div class="botanical"><span>Botanical Name:</span> Ocimum sanctum</div>
+                      
+        <div class="habitat"><span>Habitat:</span> Tropical and subtropical regions</div>
+        <div class="use"><span>Medicinal Use:</span> Relieves stress and supports sleep quality</div>
+                <div class="category"><span>Category:</span> Leaves</div>
+               <a href="tulsi.html" ><button class="button" type="button">3D Model!!!</button></a>
+              </div>
+        </section>
+        <section class="child">
+            <h3 class="eng">Tulsi</h3>
+            <p style="font-weight: 600;">Tulsi, also known as holy basil, is a herb with many medicinal uses
+                Immune system: Tulsi can help boost the immune system.
+                Anti-aging: Tulsi contains vitamin C and A, which can help protect the skin.
+                Blood sugar and blood pressure: Tulsi can help normalize blood sugar and blood pressure imbalances.
+                Tulsi acts a mild diuretic & detoxifying agent which helps in lowering the uric acid levels in the body. 
+                Anti-inflammatory: Tulsi's anti-inflammatory properties can help treat colds, coughs, and respiratory infections.</p>
+            <h3 class="hin">तुलसी</h3>
+            <p>तुलसी, जिसे पवित्र तुलसी के नाम से भी जाना जाता है, कई औषधीय उपयोगों वाली एक जड़ी-बूटी है
+                प्रतिरक्षा प्रणाली: तुलसी प्रतिरक्षा प्रणाली को बढ़ावा देने में मदद कर सकती है।
+                एंटी-एजिंग: तुलसी में विटामिन सी और ए होता है, जो त्वचा की रक्षा करने में मदद कर सकता है।
+                रक्त शर्करा और रक्तचाप: तुलसी रक्त शर्करा और रक्तचाप के असंतुलन को सामान्य करने में मदद कर सकती है।
+                तुलसी एक हल्के मूत्रवर्धक और विषहरण एजेंट का काम करती है जो शरीर में यूरिक एसिड के स्तर को कम करने में मदद करती है। 
+                सूजनरोधी: तुलसी के सूजनरोधी गुण सर्दी, खांसी और श्वसन संक्रमण के इलाज में मदद कर सकते हैं।</p>
+            <h3 class="desc">Audio Description -</h3>
+            <audio controls class='audioPlayer'>
+                <source src='music/tulsi.mp4' type='audio/mpeg'>
+            </audio>
+        </section>
+    </section>
+</body>
+</html>

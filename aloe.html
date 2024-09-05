@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(images/bg-plant.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .child{
+            border: 1px solid green;
+            float: left;    
+            width: 35%;
+            margin-left: 4rem;
+        }
+       
+  .child .plant{
+  padding: 3rem 2rem;
+  background-color: #FFF;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+  outline: .1rem solid #83da90;
+  outline-offset: -.5rem;
+  cursor: pointer;
+  
+  padding-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+ .plant img:hover{
+  transform: scale(.99);
+}
+
+ .plant:hover{
+  outline: .1rem solid #26923e;
+  outline-offset: 0;
+
+}
+ .plant h3{
+  font-size: 1.5rem;
+  color: #000;
+  padding: .5rem 0;
+}
+ .plant .botanical,.habitat,.use{
+  font-size: 1rem;
+  color: #000;
+}
+ .plant span{
+  font-weight: 500;
+}
+.plant .category{
+  font-size: .9rem;
+  color: #000;
+}
+.plant .button {
+  border: none;
+  color: white;
+  background-color: #3e7754;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+ .plant .productRating i{
+  position: absolute;
+  right: 40px;
+  display: flex;
+  margin-top: -2.1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+
+        </style>
+</head>
+<body>
+    <section>
+        <section class="child">
+          <div class="plant" data-name="p1">
+            <img src="image/aloev.jpg"alt="">
+            <h3>Aloe Vera</h3>
+            <div class="productRating">
+              <i class="ri-heart-3-line" style="color: red;"></i>
+                </div>
+            <div class="botanical"><span>Botanical Name:</span> Aloe barbadensis miller</div>
+                 
+    <div class="habitat"><span>Habitat:</span> Arid Regions</div>
+    <div class="use"><span>Medicinal Use: </span>Soothes skin burns</div>
+            <div class="category"><span>Category:</span> Medicinal use, Leaves</div>
+            <a href="aloevera.html"><button class="button" type="button">3D Model!!!</button></a>
+          </div>
+        </section>
+        <section class="child">
+            <h3 class="eng">Aloevera</h3>
+            <p style="font-weight: 600;">Aloe vera is a perennial succulent plant that has many medicinal uses, including: 
+              Gastro-oesophageal reflux disease (GERD)
+              Aloe vera syrup can help reduce the frequency of symptoms like heartburn, flatulence, and acid regurgitation
+              Blood sugar
+              Aloe vera can help lower blood sugar levels
+              Topical use
+              Aloe vera gel can be applied to the skin to treat burns, acne, psoriasis, and other skin conditions.</p>
+            <h3 class="hin">एलोवेरा</h3>
+            <p>एलोवेरा एक बारहमासी रसीला पौधा है जिसके कई औषधीय उपयोग हैं, जिनमें शामिल हैं: 
+              गैस्ट्रो-ओसोफेगल रिफ्लक्स रोग (जीईआरडी)
+              एलोवेरा सिरप सीने में जलन, पेट फूलना और एसिड रिगर्जिटेशन जैसे लक्षणों की आवृत्ति को कम करने में मदद कर सकता है
+              खून में शक्कर
+              एलोवेरा रक्त शर्करा के स्तर को कम करने में मदद कर सकता है
+              सामयिक उपयोग
+              जलन, मुँहासे, सोरायसिस और अन्य त्वचा स्थितियों के इलाज के लिए एलोवेरा जेल को त्वचा पर लगाया जा सकता है।</p>
+            <h3 class="desc">Audio Description -</h3>
+            <audio controls class='audioPlayer'>
+                <source src='music/aloever.mp4' type='audio/mpeg'>
+            </audio>
+        </section>
+    </section>
+</body>
+</html>
